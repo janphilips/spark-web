@@ -5960,19 +5960,31 @@ main section#begin .container ul li .circle {
   font-size: 2.063em;
   height: 2em;
   width: 2em;
-  padding-top: .364em;
   border: solid 1px #ffffff;
-  position: relative;
-}
-main section#begin .container ul li .circle svg {
-  position: relative;
-  fill: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
+main section#begin .container ul li .circle .fab::before {
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+main section#begin .container ul li .circle:hover .fab::before {
+  color: #232323;
+}
+
 main section#begin .container ul li .circle svg.fb {
   margin-top: 4px;
 }
@@ -5985,6 +5997,7 @@ main section#begin .container ul li .circle:hover {
 main section#begin .container ul li .circle:hover svg {
   fill: #6fbafc;
 }
+
 main section#about {
   background: #ffffff;
   padding-top: 110px;
@@ -6820,6 +6833,8 @@ main section#contacts .row .form form input {
 main section#contacts .row .form form textarea {
   height: 5.313em;
 }
+
+
 main section#contacts .row .form form .btn {
   height: 2.444em;
   width: 10.056em;
