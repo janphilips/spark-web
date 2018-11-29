@@ -5954,6 +5954,7 @@ main section#begin .container ul li {
 @media (max-width: 480px) {
   main section#begin .container ul li {
     margin: 10px;
+    vertical-align: bottom;
   }
 }
 main section#begin .container ul li .circle {
